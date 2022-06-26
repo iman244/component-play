@@ -1,0 +1,13 @@
+.il-profileTXTList {
+  @apply
+  /* within box */ leading-[3rem]  
+}
+
+.il-profileTXTList li {
+  @apply
+  /* content */ text-sm
+  /* box */ mb-1 p-2 rounded
+  /* UI */ cursor-pointer
+
+  /* conditionals */ hover:bg-gray-200
+}

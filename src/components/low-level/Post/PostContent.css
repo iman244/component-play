@@ -1,0 +1,6 @@
+.il-postImg {
+    @apply
+    /* position */ mt-4
+    /* within box */ w-full max-h-[500px]
+    /* contradiction */ object-contain
+}

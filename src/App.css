@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.layout {
+  @apply
+  /* box */ w-full
+  /* within box */ flex
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Sidebar {
+    flex: 3;
+    top: 50px;
+    height: calc(100vh - 50px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.FeedSocialMedia {
+    flex: 5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Rightbar {
+    flex: 3;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/* beauty */
+
+* {
+    @apply
+    /* content */ leading-normal
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr {
+    @apply
+    /* box */ my-5 border-gray-400
+}
+
+::-webkit-scrollbar {
+    @apply
+    /* box */ w-[5px]
+}
+
+::-webkit-scrollbar-track {
+    @apply
+    /* box */ bg-[#f1f1f1]
+}
+
+::-webkit-scrollbar-thumb {
+    @apply
+    /* box */ bg-gray-400
+}
+
+.center {
+@apply 
+/*position */ self-center
 }

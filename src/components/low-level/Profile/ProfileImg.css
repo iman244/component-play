@@ -1,0 +1,20 @@
+.il-profileImg { 
+    @apply
+    /* position */ relative
+}
+
+.il-profileImg .il-img {
+    @apply
+    /* position */ inline-block
+    /* box */ rounded-full
+    /* contradictions */ object-cover
+    /* UI */ cursor-pointer
+}
+
+.il-profileImg .badge {
+    @apply
+    /* content */ text-white text-xs
+    /* position */ absolute -top-1 left-[66%]
+    /* box */ h-3 w-3 rounded-full
+    /* within box */ flex justify-center items-center
+}

@@ -1,0 +1,87 @@
+/*
+nav
+nav > div                                  .navbar-container
+              > Link (a)                    .navbar-logo
+              > div                            .menu-icon
+              > ul                              .mobile-nav
+                    > li                         .mobile-nav-items
+                          > a
+              > Button
+*/
+
+nav {
+  @apply /* position*/ sticky top-0 z-50
+  /* content */ text-[1.2rem]
+   /* box */ h-[80px] bg-gray-900
+  /* within box */ flex justify-center items-center;
+}
+
+.navbar-container {
+  @apply /* box */ h-[80px] max-w-[1500px]
+  /* within box */flex justify-center items-center;
+}
+
+.navbar-logo {
+  @apply /* position */ justify-self-start
+    /* conditionals */ lg:absolute lg:top-0 lg:left-0
+  /* content */ text-[#fff] text-[2rem]
+  /* box */ ml-5
+  /* within box */ flex items-center
+  /* effect conditional */ lg:transform lg:translate-x-1/2 lg:translate-y-1/4
+  /* UI */ cursor-pointer;
+}
+
+.menu-icon {
+  @apply /* position */ hidden
+  /* conditionals */ lg:block lg:absolute lg:top-0 lg:right-0
+  /* content conditionals */ lg:text-3xl
+  /* effect conditionals */ lg:transform lg:translate-x-[-100%] lg:translate-y-[60%]
+  /* UI conditionals */ cursor-pointer;
+}
+
+.fa-bars {
+  @apply /* content */ text-[#fff];
+}
+
+.fa-times {
+  @apply /* content */ lg:text-[#fff] lg:text-4xl;
+}
+
+.nav-menu {
+  @apply /* position conditionals*/ lg:absolute lg:top-[80px] lg:left-[-100%]
+  /* content */ list-none text-center
+    /* conditionals */ lg:opacity-100
+  /* box */ w-[60vw] mr-8
+    /* conditionals */ lg:w-full lg:h-[90vh]
+  /* within box */ flex justify-end gap-3
+    /* conditionals */ lg:flex-col lg:justify-start
+    /* effect condionals */ lg:transition-all lg:duration-500 lg:ease-in;
+}
+
+.nav-menu.active {
+  @apply /* position conditionals */ lg:z-[1] lg:left-0 lg:opacity-100
+  /* box conditionals*/ lg:bg-[#242222]
+  /* effect conditionals */ lg:transition-all lg:duration-500 lg:ease-in;
+}
+
+.nav-items {
+  @apply /* box */ h-[80px];
+}
+
+.nav-links:not(a[href="/signUp"]) {
+  @apply /* content */ text-[#fff]
+    /* conditionals */ lg:text-center lg:hover:text-[#242424]
+  /* box */ px-4 py-2 h-full
+    /* conditionals */ hover:border-b-4 hover:border-[#fff] lg:p-8 lg:w-full lg:table lg:hover:bg-[#fff] lg:hover:rounded-none
+  /* within tags */ flex items-center
+  /* times */ transition duration-200 ease-out;
+}
+
+.nav-items a[href="/signUp"] {
+  @apply /* position */ hidden
+  /* conditionals */ lg:block
+  /* content conditionals*/ lg:text-center lg:text-2xl lg:text-[#fff] lg:hover:text-[#242424]
+  /* box conditionals */ lg:rounded lg:w-4/5 lg:bg-transparent lg:px-[14px] lg:py-5 lg:border-[1px] border-[#fff] lg:hover:bg-[#fff]
+  /* within tags conditionals */ lg:mx-auto lg:my-8
+  /* time conditionals */ transition duration-300 ease-out lg:hover:duration-[250ms];
+}

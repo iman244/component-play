@@ -1,0 +1,33 @@
+nav {
+    @apply 
+    /* position */ sticky top-0 z-50
+    /* box */ w-full h-[50px]
+    /* within-box */ flex justify-between items-center
+}
+
+.left-part {
+    flex: 4;
+}
+
+.middle-part {
+    flex: 5;
+    @apply
+    /* box */ h-full
+    /* within box */ flex items-center
+}
+
+.right-part {
+    flex: 4;
+    @apply
+    /* within box */ flex justify-around items-center
+}
+
+.middle-part .searchBar {
+    @apply
+    /* box */ h-[30px] 
+}
+
+.right-part .icons {
+    @apply
+    /* within box */ flex
+}

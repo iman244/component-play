@@ -1,0 +1,11 @@
+.il-like i {
+    @apply
+    /* content */ text-blue-600
+    /* UI */ cursor-pointer
+}
+
+.il-like span {
+    @apply
+    /* content */ text-xs
+    /* within box */ ml-2
+}

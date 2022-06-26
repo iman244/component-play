@@ -1,0 +1,12 @@
+/* structure */
+
+.il-profileTXT {
+    @apply
+    /* box */ w-fit
+    /* within box */ flex items-center
+}
+
+.il-desText {
+    @apply
+    /* box */ ml-3
+}

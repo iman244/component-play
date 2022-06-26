@@ -1,0 +1,7 @@
+.il-btn {
+    @apply
+    /* content */ text-white font-bold
+    /* box */ py-1 px-4 rounded bg-blue-500
+
+    /* conditionals */ hover:bg-blue-600
+  }

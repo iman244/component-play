@@ -1,0 +1,14 @@
+.il-imgTXT {
+    @apply
+    /* within box */ flex items-center gap-2
+}
+
+.il-imgTXT img {
+    @apply
+    /* box */ h-10 w-10
+}
+
+.il-imgTXT span {
+    @apply
+    /* content */ text-sm
+}

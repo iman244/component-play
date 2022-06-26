@@ -1,0 +1,23 @@
+.il-share {
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+
+    @apply
+    /* box */ p-3 w-full rounded-lg
+}
+
+.share-btns {
+    @apply
+    /* box */ p-2
+    /* within box */ flex justify-between items-center gap-2
+}
+
+.share-icons {
+    @apply
+    /* content */ text-sm
+    /* within box */ flex justify-between items-center gap-2
+}
+
+.shareIconTXT > i {
+    @apply text-lg
+}

@@ -1,0 +1,19 @@
+.mobile-nav {
+@apply /* content */ list-none text-center
+/* box */ w-3/5 mr-8
+/* within box */ flex justify-end gap-3;
+}
+
+.navbar-logo {
+    @apply /* position */ justify-self-start
+    /* content */ text-[#fff] text-[2rem]
+    /* box */ ml-5
+    /* within box */ flex items-center
+    /* UI */ cursor-pointer;
+  }
+
+  .nav-items-btn {
+    @apply /* conditionals */
+    /* box */ lg:h-24 lg:w-full
+    /* within box */ lg:flex lg:justify-center lg:items-center;
+  }

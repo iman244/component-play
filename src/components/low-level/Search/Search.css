@@ -1,0 +1,10 @@
+.il-search {
+    @apply
+    /* box */ py-1 px-3 bg-white rounded-[30px]
+    /* within box */ flex items-center justify-between gap-2
+}
+
+.il-search input {
+    @apply
+    /* box */ w-4/5 focus:outline-none
+}

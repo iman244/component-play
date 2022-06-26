@@ -1,0 +1,5 @@
+.il-heart i {
+    @apply
+    /* content */ text-red-600
+    /* UI */ cursor-pointer
+}

@@ -1,0 +1,16 @@
+.il-rightBarWrapper {
+    @apply
+    /* box */ pt-3 pr-3
+    /* within box */ flex flex-col gap-6
+}
+
+h2 {
+    @apply
+    /* content */ capitalize font-bold text-center
+    /* box */ mb-4
+}
+
+.rightBarbadge {
+    @apply
+    /* box */ bg-green-600 border-2 border-white
+}

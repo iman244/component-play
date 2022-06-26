@@ -1,0 +1,73 @@
+* {
+  @apply /* content */  font-sans
+    /* box */ m-0 p-0 box-border;
+}
+
+nav {
+  @apply /* position */ sticky top-0 z-50
+  /* content */ text-xl
+  /* box */ h-20 bg-[#101522]
+  /*within box */ flex justify-center items-center;
+}
+
+.navbar-container {
+  @apply /* position */ z-10
+   /* box */ h-20 w-full max-w-7xl mx-auto px-12
+   /* within box */ flex justify-between items-center
+
+   /* conditionals */ 
+   /* box */ lg:px-7;
+}
+
+.navbar-logo {
+  @apply /* content */ text-[#fff] text-4xl
+  /* box */ justify-self-start
+  /* within box */ flex items-center gap-2
+  /* UI */ cursor-pointer;
+}
+
+.mobile-icon {
+  @apply /* position */ hidden
+  /* content */ text-3xl text-[#fff]
+  /* UI */ cursor-pointer
+
+  /* conditionals */
+  /* box */ lg:block;
+}
+
+.nav-menu {
+  @apply /* content */ text-center list-none
+  /* within box */ flex items-center
+  /* effect */ transition-all duration-500 ease-in
+
+  /* conditionals */
+  /* position */ lg:absolute lg:top-20 lg:left-[-100%]
+  /* box */ lg:h-[90vh] lg:w-full lg:bg-[#101522]
+  /* within box */ lg:flex-col;
+}
+
+.nav-menu.active {
+  @apply lg:left-0;
+}
+
+.nav-items {
+  @apply /* box */ h-20
+  /* within box */ flex items-center
+
+  /* conditionals media */
+  /* box */ lg:w-full lg:border-none;
+}
+
+.nav-links {
+  @apply /* content */ text-[#fff]
+  /* box */ h-full py-2 px-4
+  /* within box */ flex justify-center items-center
+
+/* conditionals hover */
+/* content */ hover:text-[#9ba4ff]
+
+  /* conditionals media*/
+  /* content */ lg:text-center
+  /* box */ lg:w-full lg:p-8
+  /* effect */ lg:transition-all lg:duration-300 lg:ease-linear;
+}

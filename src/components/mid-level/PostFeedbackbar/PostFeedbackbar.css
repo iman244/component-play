@@ -1,0 +1,15 @@
+.il-postFeedbackBar {
+    @apply
+    /* within box */ flex items-center justify-between
+}
+
+.il-postFeedbackBar .il-bottomLeft {
+    @apply
+    /* within box */ flex items-center gap-5
+}
+
+.il-bottomRight span {
+    @apply
+    /* content */ text-sm
+    /* box */ border-b-[1px] border-dotted border-gray-600
+}

@@ -1,0 +1,31 @@
+:root {
+  --primary: #fff;
+}
+
+.btn {
+  @apply /* contents */ text-sm
+    /* box */ px-2 py-1 border-[1px] border-[color:var(--primary)] rounded-sm outline-0
+    /* time */ transition-all duration-300 ease-out;
+}
+
+.primary {
+  @apply /* content */ text-gray-900
+  /* box */ bg-[color:var(--primary)];
+}
+
+.outline {
+  @apply /* content*/ text-[color:var(--primary)]
+  /* conditional */ hover:text-gray-900
+    /* box */ bg-transparent border-[color:var(--primary)]
+    /* conditional */ hover:bg-[color:var(--primary)];
+}
+
+.medium {
+  @apply /* content */ text-lg
+     /* box */ px-4 py-1;
+}
+
+.large {
+  @apply /*content */ text-xl
+     /* box */ px-10 py-4;
+}

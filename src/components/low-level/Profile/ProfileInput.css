@@ -1,0 +1,9 @@
+.il-profileInput {
+    @apply
+    /* within box */ h-10 flex items-center gap-3
+}
+
+.il-profileInput input {
+    @apply
+    /* box */ h-2/3 w-4/5 outline-none
+}

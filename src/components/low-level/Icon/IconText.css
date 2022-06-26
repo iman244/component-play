@@ -1,0 +1,14 @@
+.il-iconText {
+    @apply
+    /* within box */ flex items-center w-fit
+}
+
+.il-iconText i {
+    @apply
+    /* box */ w-5
+}
+
+.il-iconText span {
+    @apply
+    /* box */ ml-3 whitespace-nowrap
+}

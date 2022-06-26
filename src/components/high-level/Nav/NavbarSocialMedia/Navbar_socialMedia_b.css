@@ -1,0 +1,31 @@
+nav {
+    @apply /* box */ bg-[#1877f2]
+}
+
+.right-part {
+    @apply
+    /* content */ text-white
+}
+
+.left-part .logo {
+    @apply
+    /* content */ text-xl text-white whitespace-nowrap font-bold
+    /* box */ ml-5
+    /* UI */ cursor-pointer
+}
+
+.searchBar {
+    @apply
+    /* box */ h-[30px] w-full
+}
+
+.right-part .links span {
+    @apply
+    /* box */ mr-2
+    /* UI */ cursor-pointer
+}
+
+.right-part .icons > .icon {
+    @apply
+    /* box */ m-4
+}

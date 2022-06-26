@@ -1,0 +1,11 @@
+.il-sidebar {
+    @apply
+    /* position */ sticky
+    /* contradiction */ overflow-y-scroll
+}
+
+.il-sidebarWrapper {
+    @apply
+    /* box */ p-5
+    /* within box */ flex flex-col
+}

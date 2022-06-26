@@ -1,0 +1,27 @@
+button {
+  @apply /* content */ text-[#fff] outline-none
+  /* box */ py-2 px-5 m-6 bg-[#4b59f7] border-none rounded 
+
+  /* conditionals hover */
+  /* content */ hover:text-[#4b59f7]
+  /* box */ hover:bg-[#fff] 
+  /* effect */ hover:transition-all hover:duration-300 hover:ease-out
+
+  /* conditionals media */
+  /* box */ lg:w-full;
+}
+
+.secondary {
+  @apply /*box */ bg-[#fff]
+
+  /* conditionals hover */
+    hover:bg-[#4b59f7]
+
+  /* conditionals media */
+  /* box */ lg:w-full;
+}
+
+.large {
+  @apply /* content */ text-xl
+   /* box */ py-3 px-16;
+}

@@ -1,0 +1,13 @@
+.il-icon {
+    @apply
+    /* position */ relative
+    /* UI */ cursor-pointer
+}
+
+.il-icon .iconBadge {
+    @apply
+    /* content */ text-white text-xs
+    /* position */ absolute -top-1 left-3
+    /* box */ h-4 w-4 rounded-full bg-red-600
+    /* within box */ flex justify-center items-center
+}

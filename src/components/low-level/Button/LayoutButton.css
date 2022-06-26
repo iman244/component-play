@@ -1,0 +1,9 @@
+/* beauty */
+
+.il-LayoutButton {
+    @apply
+    /* content */ text-sm font-medium
+    /* box */ w-40 px-3 py-2 rounded bg-gray-200
+
+    /* conditionals */ hover:bg-gray-300
+}
